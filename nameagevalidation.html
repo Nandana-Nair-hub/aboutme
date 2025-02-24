@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>VALIDATE FORM</title>
+<script>  
+function validateform(){  
+    var n, a;
+    n = document.myform.name.value; 
+
+    if (n == "") {
+        alert('Name can\'t be blank');
+        return false;
+    }    
+    else if (n.length < 5) {
+        alert('Name must contain at least 5 characters');
+        return false;
+    }
+
+    a = Number(document.myform.age.value); 
+    if (a == "") {
+        alert('Age can\'t be blank');
+        return false;
+    }
+    else if (isNaN(a)) {
+        alert('Enter valid age');
+        return false;
+    }
+    else if (a < 5 || a > 20) {
+        alert('Enter age between 5 and 20');
+        return false;
+    }
+
+    // If validation passes, form will submit
+    return true;
+} 
+</script>  
+</head>
+<body style="background-color:lavender; text-align:center;">  
+<form name="myform" onsubmit="return validateform()">
+<h1 style="text-align:center;">REGISTER</h1><br>
+<hr> 
+Name: <input type="text" name="name" value=""><br> 
+<br> 
+Age: <input type="text" name="age" value=""><br>
+<br>  
+<input type="submit" value="Submit">  
+</form>  
+</body>
+</html>
