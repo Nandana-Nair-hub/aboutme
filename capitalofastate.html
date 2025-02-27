@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Capital of States</title>
+<script type="text/javascript">
+ var n,answer;
+ function capital()
+ {
+n=document.myform.choose.selectedIndex;
+switch(n)
+{
+case 0:
+answer="Thiruvananthapuram";
+break;
+case 1:
+answer="Chennai";
+break;
+case 2:
+answer="Bengluru";
+break;
+case 3:
+answer="Mumbai";
+break;
+ }
+ document.myform.result.value=answer;
+ }
+
+</script> </head>
+<body style="background-color=lavender;">
+<form name="myform">
+<h1 align="center">Capital of States</h1>
+<hr color="white">
+<select size=1 name="choose" >
+<option>Kerala</option>
+<option>Tamilnadu</option>
+<option>Karnataka</option>
+<option>Maharashtra</option>
+</select>
+<br><br>
+<input type="text" name="result" value=""><br><br>
+<input type="button" value="show" onClick="capital()">
+
+
+</form>
+</body>
+</html>
