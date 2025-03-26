@@ -1,28 +1,29 @@
 <html>
 <head>
 <script>
-function add()
-{
-var n2;
-n2=Number(document.myform.n1.value);
-n2=n2*(n2+1)/2;
-document.myform.result.value=n2;
+function add() {
+    var n1;
+    n1 = Number(document.myform.n1.value); 
+    n1 = n1 * (n1 + 1) / 2; 
+    document.myform.result.value = n1; 
 }
 </script>
 </head>
 <body>
 <form name="myform">
-<h1 align="center">SUM OF NUMBERS UPTO A LIMIT</h1>
+<h1 align="center">SUM OF NUMBERS UP TO A LIMIT</h1>
 <hr color="red">
-<center><u>
-Number: <input type="text" name="nl" value="">
+<center>
+<u>
+Number: <input type="text" name="n1" value=""> 
 <br>
 <br>
-<input type="button" value="add" onClick="add()">
+<input type="button" value="Add" onClick="add()">
 <br>
 <br>
-Result:<input type="text" name="result" value="">
-</center></u>
+Result: <input type="text" name="result" value="">
+</u>
+</center>
 </form>
 </body>
 </html>
