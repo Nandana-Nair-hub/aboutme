@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function myfunc()
+{
+var n,f;
+n=document.myform.nl.value;
+if(isNaN(n))
+{
+alert("enter a number");}
+else if(n=="")
+{ alert("cant be blank");
+}
+else
+f=0;
+for(i=2;i<=(n/2);i++)
+if(n%i==0)
+f=1;
+}
+if(f==0)
+{
+confirm("prime number");
+else
+{
+confirm("not prime number");
+</script>
+<body style="background-color:pink;">
+<form name="myform">
+<h1 align="center">Prime or not</h1>
+<hr color="white">
+<center><u>
+Number:<input type="text" name="n1" value="">
+<br><br>
+<input type="button" value="submit" onclick="myfunc()">
+<br>
+</center>
+</u>
+</body>
+</html>
