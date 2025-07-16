@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Guess The Number Game</title>
+<style>
+body{
+text-align:center;
+color:white;
+background:#246363;
+padding:50px;
+}
+
+h1{
+font-size:40px;
+font-family:"Lucida Console","Courier New",monospace;
+}
+
+h2
+{
+font-family:"Monaco",monospace;
+}
+
+.container{
+font-family:"Monaco",monospace;
+margin:auto;
+border:3px solid white;
+width:60%;
+padding:50px 50px 75px;
+background:#2F8282;
+text-align:center;
+font-size:20px;
+}
+
+#time{
+text-align:right;
+}
+
+#guess{
+border:3px solid white;
+width:17%;
+padding:15px;
+border-radius:5px;
+box-shadow:5px 5px 5px rgba(1,1,1,0.2);
+}
+
+#but{
+color:#333333;
+border:3px solid white;
+width:15%;
+padding:15px;
+border-radius:5px;
+}
+
+#but:hover{
+background:#388D91;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<h1>LET'S PLAY A GAME</h1>
+<h2> GUESS THE NUMBER</h2>
+<div class="container">
+<p id="time">00:00</p>
+<p id="game">Guess a number between 1 and 100</p>
+<p>*Try to guess the random number between 1 and 100. You'll be told if your guess is too high or too low. The fewer attempts the better. Good Luck!! <3*</p>
+<br>
+<input type="number" id="guess" placeholder="enter your guess">
+<br>
+<br>
+<input type="button" id="but" value="submit" onclick="numberGuess()">
+<br>
+<br>
+<p id="message"></p>
+<p>Attempts:<span id="attempts">0</span></p>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
